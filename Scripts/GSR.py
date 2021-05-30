@@ -39,7 +39,7 @@ while umbral_top<2450:
 		alturas=pd.DataFrame.from_dict(peaks)
 		#para poder sacar los features pasamos la columna de las alturas a un array de numpy
 		print (alturas)
-		alturas_calculos=pd.DataFrame(alturas['SCR_Peaks']).to_numpy()
+		alturas_calculos=pd.DataFrame(alturas['SCR_Heights']).to_numpy()
 		#alturas_calculos=pd.DataFrame(signals['SCR_Amplitude']).to_numpy()
 		media=np.mean(alturas_calculos)
 		std=np.std(alturas_calculos)
